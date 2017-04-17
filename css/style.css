@@ -1,6 +1,4 @@
 body{height:100%;width:100%;overflow-X:hidden;background-color:#f9f9f9;}
-body > nav > div > ul.right.hide-on-med-and-down > li > a:hover,body > nav > div > ul.right.hide-on-med-and-down > li > a:focus{text-decoration: none; color: white;}
-body > nav > div > ul.right.hide-on-med-and-down > li > a{font-size: 17px;}
 .clearfix:before, .clearfix:after{content:'';display:table;}
 .clearfix:after{clear:both;}
 .navbar-default{background-repeat:no-repeat;border-radius:0px;border:0;z-index:1000;width:100%;background-color:#2E78B5;font-family: 'Comfortaa', cursive;font-size: 1.12em;}
@@ -121,3 +119,37 @@ footer ul li a {color: white;font-family: 'Comfortaa', cursive;font-size:1.1em;}
 	.nivo-caption1 img { width: 60%; }
 	.nivo-caption1 h1{font-size: 19px; margin-left: -50px; margin-top: 12px;}
 }
+
+
+@media (min-width: 441px) and (max-width: 768px){
+            #paletainicio > div > div > h2{padding: 0px;}
+        body > section:nth-child(8) > div > div:nth-child(1) > h2 > img{padding: 0px 210px}
+        }
+
+@media (max-width: 440px){
+            #paletainicio > div > div > h2{padding: 0px;}
+            body > section:nth-child(8) > div > div:nth-child(1) > h2 > img{padding: 0px 85px}
+            .btn-rojo{font-size: 15px;}
+        }
+
+.center{align-content: center;}
+.container{padding: 0;}
+
+nav,footer,.flecha-abajo{background: #2E78B5 !important;}
+ul.right.hide-on-med-and-down >li>a{font-size: 18px;}
+#dropdown1{top: 64px !important;}
+.prod{background: #555555; border: 1px solid #2E78B5 !important;}
+.prod:hover{background: #222222 !important;}
+.prod>a{color: white !important;}
+a:hover{text-decoration: none;color: white;}
+.btn-rojo:hover,.btn-rojo:focus{background: #9B2636;}
+#empresa{padding: 0}
+.img-responsive{display: block;max-width: 100%;height: auto;}
+
+#colores > div > div > h2{padding: 0px 200px;}
+
+body > footer{padding: 40;}
+.footer-copyright{background: #222222 !important;}
+.page-footer{padding: 0}
+.cont-footer{padding: 20px 20px 0px 20px}
+#sidenav-overlay{z-index: 0;}
