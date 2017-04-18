@@ -41,6 +41,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     </head>
     <body>
       <script>
@@ -56,22 +59,22 @@
 
   <div class="navbar-fixed">
     <nav role="navigation">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><img src="img/logo.png"></a>
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo"><img class="logo" src="img/logo.png"></a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="empresa.html">Empresa</a></li>
-            <li><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+            <li class="margin20"><a href="index.html">Inicio</a></li>
+            <li class="margin20"><a href="empresa.html">Empresa</a></li>
+            <li class="margin20"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
           <ul id="dropdown1" class="dropdown-content">
             <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
             <li class="prod"><a href="color.html">Pabilo de color</a></li>
             <li class="prod"><a href="crochet.html">Hilo de crochet</a></li>
             <li class="prod"><a href="matizado.html">Hilos matizados</a></li>
             <li class="prod"><a href="cordel.html">Cordeles</a></li>
-          </ul>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          </ul> 
+            <li class="border-bto-white margin20"><a href="galeria.html">Galeria</a></li>
+            <li class="margin20"><a href="contacto.html">Contacto</a></li>
           </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
@@ -92,34 +95,35 @@
   </div>
 
         <section class="fondo col-xs-12">
-            <div class="col-xs-12 margin50">
+            <div class="container-fluid margin50">
                 <div class="col-xs-12 marginbot75">
                     <h2 class="letraroja text-center letracursiva" data-aos="zoom-out-right">Inspirado en el Arte Textil</h2>
                     <hr class="hrazul width50" data-aos="zoom-out-right">
-                      <div class="margin50 col-xs-12">
-                        <img data-aos="fade-right" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/hilos01.jpg">
-                        <img data-aos="fade-down" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/crudo02.jpg">
-                        <img data-aos="fade-down" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/crochet03.jpg"> 
-                        <img data-aos="fade-left" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/idg04.jpg">
-                        <img data-aos="fade-up-right" width="250" height="250" class="col-md-offset-1 col-xs-12 col-sm-6 col-md-4" src="img/idg05.jpg">
-                        <img data-aos="fade-up-left" width="250" height="250" class="col-md-offset-1 col-xs-12 col-sm-6 col-md-4" src="img/idg06.jpg">
-                        <img data-aos="flip-down" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/idg07.jpg">
-                        <img data-aos="flip-down" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/pabilo01.jpg">
-                        <img data-aos="flip-down" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/hilos02.jpg">
-                        <img data-aos="zoom-in-right" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/idg01.jpg">
-                        <img data-aos="zoom-in-up" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/hilos03.jpg">
-                        <img data-aos="zoom-in-up" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/crochet03.jpg">
-                        <img data-aos="zoom-in-left" width="250" height="250" class="col-xs-12 col-sm-6 col-md-3" src="img/color02.jpg">
-                        <img data-aos="zoom-out-right" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/idg05.jpg">
-                        <img data-aos="zoom-out-right" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/matizado03.jpg">
-                        <img data-aos="zoom-out-right" width="250" height="250" class="col-xs-12 col-sm-6 col-md-4" src="img/idg07.jpg">
-                        <img data-aos="zoom-out-right" width="250" height="250" class="col-md-5 col-xs-12 col-sm-6" src="img/idg08.jpg">
-                        <img data-aos="zoom-out-right" width="250" height="250" class="col-md-offset-1 col-md-5 col-xs-12 col-sm-6" src="img/idg09.jpg">
+                        <div class="grid margin50">
+                          <div class="grid-sizer"></div>
+                          <div class="grid-item grid-item--height2" data-aos="fade-right"><img src="img/hilos01.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-down"><img src="img/crudo02.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-down"><img src="img/crochet03.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-left"> <img src="img/idg04.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-up-right"><img src="img/idg05.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-up-left"><img src="img/idg06.jpg" alt=""></div>
+                          <div class="grid-item grid-item--height2" data-aos="flip-down"><img src="img/idg07.jpg" alt=""></div>
+                          <div class="grid-item grid-item--width2" data-aos="flip-down"><img src="img/pabilo01.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-in-right"><img src="img/hilos02.jpg" alt=""></div>
+                          <div class="grid-item grid-item--height2" data-aos="zoom-in-up"><img src="img/idg01.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-out-right"><img src="img/hilos03.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-out-right"><img src="img/crochet03.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-in-left"><img src="img/color02.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="fade-up-right"><img src="img/idg05.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-in-left"><img src="img/matizado03.jpg" alt=""></div>
+                          <div class="grid-item grid-item--height2"><img src="img/idg07.jpg" alt=""></div>
+                          <div class="grid-item grid-item--width2"><img src="img/idg08.jpg" alt=""></div>
+                          <div class="grid-item" data-aos="zoom-out-right"><img src="img/idg09.jpg" alt=""></div>
                       </div>
                 </div>
             </div>
         </section> 
-    <footer class="col-xs-12 page-footer white-text">
+    <footer class="col-xs-12 page-footer white-text container-fluid">
       <div class="cont-footer">
         <div class="col-sm-3 col-xs-12 marginbot25">
                   <h3 class="text-center">Contáctanos</h3>
@@ -164,6 +168,18 @@
           </div>
         </footer>
         <script type="text/javascript">
+        $(document).ready(function(){
+          $(".button-collapse").sideNav();
+          $(".dropdown-button").dropdown();
+            var $grid = $('.grid').masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+              columnWidth: '.grid-sizer'
+            });
+            $grid.imagesLoaded().progress( function(){
+            $grid.masonry('layout');
+            }); 
+        });
           AOS.init({
               easing: 'ease-in-out-sine'
           });

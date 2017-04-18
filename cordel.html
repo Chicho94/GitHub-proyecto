@@ -42,6 +42,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+        
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     </head>
     <body>
         <script>
@@ -56,22 +60,22 @@
 
     <div class="navbar-fixed">
         <nav role="navigation">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo"><img src="img/logo.png"></a>
+            <div class="nav-wrapper container">
+              <a href="#!" class="brand-logo"><img class="logo" src="img/logo.png"></a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+                <li class="margin20"><a href="index.html">Inicio</a></li>
+                <li class="margin20"><a href="empresa.html">Empresa</a></li>
+                <li class="margin20"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
                     <ul id="dropdown1" class="dropdown-content">
                       <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
                       <li class="prod"><a href="color.html">Pabilo de color</a></li>
                       <li class="prod"><a href="crochet.html">Hilo de crochet</a></li>
                       <li class="prod"><a href="matizado.html">Hilos matizados</a></li>
-                      <li class="prod"><a href="cordel.html">Cordeles</a></li>
+                      <li class="prod bg-active"><a href="cordel.html">Cordeles</a></li>
                     </ul>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li class="margin20"><a href="galeria.html">Galeria</a></li>
+                <li class="margin20"><a href="contacto.html">Contacto</a></li>
               </ul>
                 <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
@@ -230,13 +234,13 @@
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-md-12 margin50 text-center" data-aos="flip-right">
-                            <a href="contacto.html" class="btn btn-rojo">Solicita tu Cotización</a>
+                            <a href="contacto.html" class="btn btn-rojo padding15">Solicita tu Cotización</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="col-xs-12 page-footer white-text">
+        <footer class="col-xs-12 page-footer white-text container-fluid">
             <div class="cont-footer">
                 <div class="col-sm-3 col-xs-12 marginbot25">
                     <h3 class="text-center">Contáctanos</h3>
@@ -288,6 +292,14 @@
             AOS.init({
                 easing: 'ease-in-out-sine'
             });
+            var $grid = $('.grid').masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+              columnWidth: '.grid-sizer'
+            });
+            $grid.imagesLoaded().progress( function(){
+            $grid.masonry('layout');
+            }); 
         </script> 
     </body>
 </html>

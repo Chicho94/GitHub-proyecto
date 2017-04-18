@@ -133,8 +133,6 @@ footer ul li a {color: white;font-family: 'Comfortaa', cursive;font-size:1.1em;}
         }
 
 .center{align-content: center;}
-.container{padding: 0;}
-
 nav,footer,.flecha-abajo{background: #2E78B5 !important;}
 ul.right.hide-on-med-and-down >li>a{font-size: 18px;}
 #dropdown1{top: 64px !important;}
@@ -153,3 +151,12 @@ body > footer{padding: 40;}
 .page-footer{padding: 0}
 .cont-footer{padding: 20px 20px 0px 20px}
 #sidenav-overlay{z-index: 0;}
+.border-bto-white{border-left: 4px solid white; background: #256396;}
+.bg-active{background: #337AB7;}
+.margin20{margin: 0px 10px;}
+.brand-logo{display:block;}
+.logo{margin-bottom: 8px;}
+.bgblanco{background: white;}
+.padding15{padding-left: 15px;}
+.padding30{padding: 30px;}
+input[type=text],input[type=email]{border-bottom: 0px}

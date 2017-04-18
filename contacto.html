@@ -55,13 +55,13 @@
     </style>
     <div class="navbar-fixed">
         <nav role="navigation">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo"><img src="img/logo.png"></a>
+            <div class="nav-wrapper container">
+              <a href="#!" class="brand-logo"><img class="logo" src="img/logo.png"></a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="empresa.html">Empresa</a></li>
-                <li><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+                <li class="margin20"><a href="index.html">Inicio</a></li>
+                <li class="margin20"><a href="empresa.html">Empresa</a></li>
+                <li class="margin20"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
                     <ul id="dropdown1" class="dropdown-content">
                       <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
                       <li class="prod"><a href="color.html">Pabilo de color</a></li>
@@ -69,8 +69,8 @@
                       <li class="prod"><a href="matizado.html">Hilos matizados</a></li>
                       <li class="prod"><a href="cordel.html">Cordeles</a></li>
                     </ul>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li class="margin20"><a href="galeria.html">Galeria</a></li>
+                <li class="border-bto-white margin20"><a href="contacto.html">Contacto</a></li>
               </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
@@ -90,27 +90,6 @@
         </nav>
     </div>
     
-        <div class="input-field">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">Correo</label>
-        </div>
-        <div class="input-field">
-            <i class="fa fa-building" aria-hidden="true"></i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">compañia</label>
-        </div>
-        <div class="input-field">
-            <i class="fa fa-phone-square" aria-hidden="true"></i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">telefono</label>
-        </div>
-        <div class="input-field">
-            <i class="fa fa-comments" aria-hidden="true"></i>
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">mensaje</label>
-        </div>
-
         <section class="fondo col-xs-12">
             <div class="col-xs-12 margin50">
                 <div class="col-xs-12 marginbot75">
@@ -128,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="row text-center">
-                                <span class="input input--madoka" ng-class="{ 'has-error': contactform.nombre.$invalid && submitted }">
+                                <span class="input input--madoka bgblanco" ng-class="{ 'has-error': contactform.nombre.$invalid && submitted }">
                                     <input ng-model="formData.nombre"  class="input__field input__field--madoka" type="text" id="nombre" name="nombre" required />
                                     <label class="input__label input__label--madoka" for="nombre">
                                         <svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none"> <path d="m0,0l404,0l0,77l-404,0l0,-77z"/> </svg>
@@ -137,7 +116,7 @@
                                 </span>
                             </div>
                             <div class="row text-center margin25">
-                                <span class="input input--madoka" ng-class="{ 'has-error': contactform.email.$invalid && submitted }">
+                                <span class="input input--madoka bgblanco" ng-class="{ 'has-error': contactform.email.$invalid && submitted }">
                                     <input ng-model="formData.email"  class="input__field input__field--madoka" type="email" id="email" name="email" required />
                                     <label class="input__label input__label--madoka" for="email">
                                         <svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
@@ -148,7 +127,7 @@
                                 </span>
                             </div>
                             <div class="row text-center margin25">
-                                <span class="input input--madoka" ng-class="{ 'has-error': contactform.compania.$invalid && submitted }">
+                                <span class="input input--madoka bgblanco" ng-class="{ 'has-error': contactform.compania.$invalid && submitted }">
                                     <input ng-model="formData.compania"  class="input__field input__field--madoka" type="text" id="compania" name="compania" required />
                                     <label class="input__label input__label--madoka" for="compania">
                                         <svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
@@ -159,7 +138,7 @@
                                 </span>
                             </div>
                             <div class="row text-center margin25">
-                                <span class="input input--madoka" ng-class="{ 'has-error': contactform.telefono.$invalid && submitted }">
+                                <span class="input input--madoka bgblanco" ng-class="{ 'has-error': contactform.telefono.$invalid && submitted }">
                                     <input ng-model="formData.telefono"  class="input__field input__field--madoka" type="text" id="telefono" name="telefono" required />
                                     <label class="input__label input__label--madoka" for="telefono">
                                         <svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
@@ -183,7 +162,7 @@
             </div>
         </section>
 
-        <footer class="col-xs-12 page-footer white-text">
+        <footer class="col-xs-12 page-footer white-text container-fluid">
             <div class="cont-footer">
                 <div class="col-sm-3 col-xs-12 marginbot25">
                     <h3 class="text-center">Contáctanos</h3>
@@ -235,6 +214,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
         <script src="app.js"></script>
         <script src="controllers.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".button-collapse").sideNav();
+                $(".dropdown-button").dropdown();
+            });
+        </script>
         <script>
             jQuery('ul.nav li.dropdown').hover(function() {
               jQuery(this).find('.dropdown-menu').stop(true, true).delay(1).fadeIn();

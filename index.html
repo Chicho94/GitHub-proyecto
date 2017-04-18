@@ -42,6 +42,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
     </head>
     <body data-aos-easing="ease-out-back" data-aos-duration="400" data-aos-delay="0" data-aos-delay="0">
         <script>
@@ -56,13 +59,13 @@
 
 	<div class="navbar-fixed">
 		<nav role="navigation">
-		    <div class="nav-wrapper">
-		      <a href="#!" class="brand-logo"><img src="img/logo.png"></a>
+		    <div class="nav-wrapper container">
+		      <a href="#!" class="brand-logo"><img class="logo" src="img/logo.png"></a>
 		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
 		      <ul class="right hide-on-med-and-down">
-		        <li><a href="index.html">Inicio</a></li>
-		        <li><a href="empresa.html">Empresa</a></li>
-		        <li><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+		        <li class="border-bto-white margin20"><a href="index.html">Inicio</a></li>
+		        <li class="margin20"><a href="empresa.html">Empresa</a></li>
+		        <li class="margin20"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
 					<ul id="dropdown1" class="dropdown-content">
 					  <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
 					  <li class="prod"><a href="color.html">Pabilo de color</a></li>
@@ -70,8 +73,8 @@
 					  <li class="prod"><a href="matizado.html">Hilos matizados</a></li>
 					  <li class="prod"><a href="cordel.html">Cordeles</a></li>
 					</ul>
-		        <li><a href="galeria.html">Galeria</a></li>
-		        <li><a href="contacto.html">Contacto</a></li>
+		        <li class="margin20"><a href="galeria.html">Galeria</a></li>
+		        <li class="margin20"><a href="contacto.html">Contacto</a></li>
 		      </ul>
 		      <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
@@ -114,9 +117,9 @@
 	    </ul>
 	</div>
 
-	<section class="text1" id="empresa">
+	<section class="text1 padding30" id="empresa">
 		<div class="flecha-abajo col-xs-12">
-		<div class="margin50">
+		<div class="margin50 ">
 			
 			<div class="col-xs-12 col-sm-6">
 				<div class="col-xs-6" data-aos="zoom-out-right">
@@ -138,7 +141,7 @@
 
 		<section id="paletainicio" class="fondo col-xs-12">
             <svg id="divisorverde" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none"> <path d="M0 0 L50 100 L100 0 Z"></path> </svg>
-            <div class="container margin50">
+            <div class="container-fluid margin50">
                 <div class="col-xs-12">
                     <h2 id="colores" class="letraverde text-center col-xs-12" data-aos="zoom-in">Conoce Nuestra Paleta de <i class="letracursiva letraroja">Colores</i></h2>
                     <div class="col-md-12 margin50 marginbot75">
@@ -336,25 +339,25 @@
         </section>
 
         <section class="text1 col-xs-12">
-            <div class="col-xs-12 margin50">
-                <div class="col-xs-12 marginbot75" data-aos="fade-down">
+            <div class="container margin50">
+                <div class="col-xs-12 marginbot75">
                     <h2 class="letrablanca">Variedad en Hilos de Calidad</h2>
-                    <hr class="hrblanco">
-                    <div class="margin50">
-                        <img class="col-xs-12 col-sm-6 col-md-4" width="250" height="250" data-aos="zoom-in-up" src="img/hilos04.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-4" width="250" height="250" data-aos="zoom-in-up" src="img/crochet02.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-4" width="250" height="250" data-aos="zoom-in-up" src="img/crudo03.jpg"> 
-                        <img class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4" width="250" height="250" data-aos="zoom-in-up" src="img/color02.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-offset-1 col-md-4" width="250" height="250" data-aos="zoom-in-up" src="img/idg05.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-3" width="250" height="250" data-aos="zoom-in-up" src="img/idg06.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-3" width="250" height="250" data-aos="zoom-in-up" src="img/cordel7.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-3" width="400" height="250" data-aos="zoom-in-up" src="img/pabilo01.jpg">
-                        <img class="col-xs-12 col-sm-6 col-md-3" width="400" height="250" data-aos="zoom-in-up" src="img/crochet03.jpg">
+                    <hr class="hrblanco width50">
+                    <div class="grid margin50">
+                      <div class="grid-sizer"></div>
+                      <div class="grid-item grid-item--height2" data-aos="zoom-in-up"><img src="img/hilos04.jpg" alt=""></div>
+                      <div class="grid-item" data-aos="zoom-out">       <img src="img/crochet02.jpg" alt=""></div>
+                      <div class="grid-item" data-aos="zoom-in-left">   <img src="img/crudo03.jpg"   alt=""></div>
+                      <div class="grid-item" data-aos="zoom-out-right"> <img src="img/color02.jpg"   alt=""></div>
+                      <div class="grid-item" data-aos="zoom-out-down">  <img src="img/idg05.jpg"     alt=""></div>
+                      <div class="grid-item" data-aos="zoom-in-up">     <img src="img/idg06.jpg"     alt=""></div>
+                      <div class="grid-item grid-item--height2" data-aos="zoom-out-up"><img src="img/cordel7.jpg" alt=""></div>
+                      <div class="grid-item grid-item--width2" data-aos="zoom-out"><img src="img/pabilo01.jpg" alt=""></div>
+                      <div class="grid-item" data-aos="zoom-in-up"><img src="img/crochet03.jpg" alt=""></div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <section class="fondo col-xs-12">
             <svg id="divisorverde" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none"> <path d="M0 0 L50 100 L100 0 Z" /> </svg>
@@ -362,25 +365,25 @@
                 <div class="col-xs-12 text-center" data-aos="zoom-out">
                     <h2 class="letraverde"><img src="img/increirojo.png" class="img-responsive displayinline verticalalignbottom"> te invita a crear.<br><small class="letraverde">Ofrecemos productos y servicios textiles al sector <i>industrial</i> y <i>artesanal</i>.</small></h2>
                 </div>
-                <div class="col-xs-12 margin25 text-center" data-aos="zoom-out">
+                <div class="col-xs-12 margin25 text-center" >
                     <div class="col-sm-4 col-xs-12">
-                        <img src="img/pb1.png" class="img-responsive">
+                        <img src="img/pb1.png" data-aos="fade-right" class="img-responsive">
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <img src="img/pb2.png" class="img-responsive">
+                        <img src="img/pb2.png" data-aos="fade-down" class="img-responsive">
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <img src="img/pb3.png" class="img-responsive">
+                        <img src="img/pb3.png" data-aos="fade-left" class="img-responsive">
                     </div>
                 </div> 
-                <div class="col-xs-12 margin50 marginbot75 text-center" data-aos="zoom-out">
-                    <a href="contacto.html" class="btn btn-rojo col-md-6 col-md-offset-3 col-xs-12">Solicita tu Cotización</a>
+                <div class="col-xs-12 margin50 marginbot75 text-center">
+                    <a href="contacto.html" class="btn btn-rojo col-md-6 col-md-offset-3 col-xs-12 padding15" data-aos="flip-left">Solicita tu Cotización</a>
                 </div>
             </div>
         </section>
 
- 		<footer class="col-xs-12 page-footer white-text">
-	 		<div class="cont-footer">
+ 		<footer class="col-xs-12 page-footer white-text container-fluid">
+	 		<div class="cont-footer ">
 				<div class="col-sm-3 col-xs-12 marginbot25">
 	                <h3 class="text-center">Contáctanos</h3>
 	                <hr>
@@ -427,16 +430,25 @@
   	<script type="text/javascript">
   	$(document).ready(function(){
       	$(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
         $('.slider').slider(
             {   
                 indicators:false,
                 intervals:1000
             });
-        $(".dropdown-button").dropdown();
+            var $grid = $('.grid').masonry({
+              itemSelector: '.grid-item',
+              percentPosition: true,
+              columnWidth: '.grid-sizer'
+            });
+            $grid.imagesLoaded().progress( function(){
+            $grid.masonry('layout');
+            }); 
         });
         AOS.init({
             easing: 'ease-in-out-sine'
         });
+
         </script>
     </body>
 </html>
