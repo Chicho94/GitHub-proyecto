@@ -2,7 +2,7 @@ body{height:100%;width:100%;overflow-X:hidden;background-color:#f9f9f9;}
 .clearfix:before, .clearfix:after{content:'';display:table;}
 .clearfix:after{clear:both;}
 .navbar-default{background-repeat:no-repeat;border-radius:0px;border:0;z-index:1000;width:100%;background-color:#2E78B5;font-family: 'Comfortaa', cursive;font-size: 1.12em;}
-.navbar-default .navbar-nav > li > a{margin-right:45px;letter-spacing:3px;color:#fff;padding: 17px 5px 15px 5px;}
+.navbar-default .navbar-nav > li > a{-right:45px;letter-spacing:3px;color:#fff;padding: 17px 5px 15px 5px;}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:white;border-bottom:4px solid white;background-color:transparent;}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -159,4 +159,6 @@ body > footer{padding: 40;}
 .bgblanco{background: white;}
 .padding15{padding-left: 15px;}
 .padding30{padding: 30px;}
+.padding50{padding-top: 50px;}
 input[type=text],input[type=email]{border-bottom: 0px}
+.container{width: 90%}
