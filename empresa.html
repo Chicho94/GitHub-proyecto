@@ -61,18 +61,18 @@
               <a href="#!" class="brand-logo"><img class="logo" src="img/logo.png"></a>
               <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
               <ul class="right hide-on-med-and-down">
-                <li class="margin20"><a href="index.html">Inicio</a></li>
+                <li class="line-white margin20"><a href="index.html">Inicio</a></li>
                 <li class="border-bto-white margin20"><a href="empresa.html">Empresa</a></li>
-                <li class="margin20"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
-                    <ul id="dropdown1" class="dropdown-content">
+                <li class="line-white margin20" onmouseout="DropOut()" onmouseover="DropIn()"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+                    <ul id="dropdown1" class="dropdown-content" onmouseout="DropOut()">
                       <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
                       <li class="prod"><a href="color.html">Pabilo de color</a></li>
                       <li class="prod"><a href="crochet.html">Hilo de crochet</a></li>
                       <li class="prod"><a href="matizado.html">Hilos matizados</a></li>
                       <li class="prod"><a href="cordel.html">Cordeles</a></li>
                     </ul>
-                <li class="margin20"><a href="galeria.html">Galeria</a></li>
-                <li class="margin20"><a href="contacto.html">Contacto</a></li>
+                <li class="line-white margin20"><a href="galeria.html">Galeria</a></li>
+                <li class="line-white margin20"><a href="contacto.html">Contacto</a></li>
               </ul>
               <ul class="side-nav" id="mobile-demo">
                 <li><a href="index.html">Inicio</a></li>
@@ -121,7 +121,7 @@
         </section>
 
         <section class="fondo col-xs-12">
-            <div class=" col-xs-12">
+            <div class=" margin75 container">
                 <div class="col-xs-12 margin50 text-center" data-aos="zoom-in">
                     <h2 class="letraroja letracursiva"> Trabajando Contigo por Más de Una Década </h2>
                 </div>
@@ -187,6 +187,9 @@
         AOS.init({
             easing: 'ease-in-out-sine'
         });
+            $(".line-white").hover(function(){$(this).addClass("border-bto-white");},function(){$(this).removeClass("border-bto-white");});
+            function DropIn() { $("#dropdown1").css("display","block"); }
+            function DropOut(){ $("#dropdown1").css("display","none");  }
         </script> 
     </body>
 </html>
