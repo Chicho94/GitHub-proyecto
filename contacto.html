@@ -61,8 +61,8 @@
               <ul class="right hide-on-med-and-down">
                 <li class="line-white margin20"><a href="index.html">Inicio</a></li>
                 <li class="line-white margin20"><a href="empresa.html">Empresa</a></li>
-                <li class="line-white margin20" onmouseout="DropOut()" onmouseover="DropIn()"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
-                    <ul id="dropdown1" class="dropdown-content" onmouseout="DropOut()">
+                <li class="line-white margin20 dropdown-button drophover"><a class="dropdown-button" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true" title="Toggle dropdown menu"></i></a></li>
+                    <ul id="dropdown1" class="dropdown-content">
                       <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
                       <li class="prod"><a href="color.html">Pabilo de color</a></li>
                       <li class="prod"><a href="crochet.html">Hilo de crochet</a></li>
@@ -205,11 +205,6 @@
             });
         </script>
         <script>
-            jQuery('ul.nav li.dropdown').hover(function() {
-              jQuery(this).find('.dropdown-menu').stop(true, true).delay(1).fadeIn();
-            }, function() { jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(); });
-        </script>
-        <script>
             (function() {
                 if (!String.prototype.trim) {
                     (function() {
@@ -244,8 +239,7 @@
             })();
 
         $(".line-white").hover(function(){$(this).addClass("border-bto-white");},function(){$(this).removeClass("border-bto-white");});
-        function DropIn() { $("#dropdown1").css("display","block"); }
-        function DropOut(){ $("#dropdown1").css("display","none");  }
+        $(".drophover").hover(function(){$("#dropdown1").slideDown(500);},function(){$("#dropdown1").slideUp(500);}); 
         </script>
     </body>
 </html>

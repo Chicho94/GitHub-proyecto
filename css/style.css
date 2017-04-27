@@ -151,7 +151,7 @@ body > footer{padding: 40;}
 .page-footer{padding: 0}
 .cont-footer{padding: 20px 20px 0px 20px}
 #sidenav-overlay{z-index: 0;}
-.border-bto-white{border-left: 4px solid white; background: #256396;}
+.border-bto-white{border-bottom: 4px solid white; background: #256396;}
 .bg-active{background: #337AB7;}
 .margin20{margin: 0px 10px;}
 .brand-logo{display:block;}
@@ -160,5 +160,7 @@ body > footer{padding: 40;}
 .padding15{padding-left: 15px;}
 .padding30{padding: 30px;}
 .padding50{padding-top: 50px;}
-input[type=text],input[type=email]{border-bottom: 0px}
+input[type=text],input[type=email]{border-bottom: 0px; margin: 0px;}
 .container{width: 90%}
+nav{height: 68px;}
+#dropdown1{width: 150px !important; opacity: 1;}

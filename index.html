@@ -65,8 +65,8 @@
 		      <ul class="right hide-on-med-and-down">
 		        <li class="border-bto-white margin20"><a href="index.html">Inicio</a></li>
 		        <li class="margin20 line-white"><a href="empresa.html">Empresa</a></li>
-		        <li class="margin20 line-white dropdown-button" onmouseout="DropOut()" onmouseover="DropIn()"><a class="dropdown-button" id="producto" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-					<ul id="dropdown1" class="dropdown-content" onmouseout="DropOut()">
+		        <li class="margin20 line-white dropdown-button drophover"><a class="dropdown-button" id="producto" data-activates="dropdown1">Productos&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+					<ul id="dropdown1" class="dropdown-content">
 					  <li class="prod"><a href="crudo.html">Pabilo Crudo</a></li>
 					  <li class="prod"><a href="color.html">Pabilo de color</a></li>
 					  <li class="prod"><a href="crochet.html">Hilo de crochet</a></li>
@@ -428,34 +428,27 @@
 	        </div>
         </footer>
     <style type="text/css">
-    	#dropdown1{width: 150px !important; opacity: 1;}
     </style>
   	<script type="text/javascript">
   	$(document).ready(function(){
       	$(".button-collapse").sideNav();
         $(".dropdown-button").dropdown();
-        $('.slider').slider(
-            {   
-                indicators:false,
-                intervals:1000
-            });
+        $('.slider').slider({indicators:false, intervals:1000 });
+
             var $grid = $('.grid').masonry({
-              itemSelector: '.grid-item',
-              percentPosition: true,
-              columnWidth: '.grid-sizer'
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
             });
             $grid.imagesLoaded().progress( function(){
-            $grid.masonry('layout');
+                $grid.masonry('layout');
             }); 
-
-
         });
         AOS.init({
             easing: 'ease-in-out-sine'
         });
 		$(".line-white").hover(function(){$(this).addClass("border-bto-white");},function(){$(this).removeClass("border-bto-white");});
-		function DropIn() { $("#dropdown1").css("display","block"); }
-		function DropOut(){ $("#dropdown1").css("display","none");  }
-    	</script>
+        $(".drophover").hover(function(){$("#dropdown1").slideDown(500);},function(){$("#dropdown1").slideUp(500);}); 
+        </script>
     </body>
 </html>
